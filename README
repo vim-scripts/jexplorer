@@ -1,0 +1,27 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1162
+
+This plugin allows browse Java package system.
+
+requirments:
+  1. exuberant ctags ( or at least tags file )
+  2. grep,sed,uniq - utility ( sorry widnows folk)
+  3. maltvals.vim && tree.vim   plugins for vim
+  
+JExplorer command  opens window with explorer in it.
+<SPACE> - pressed on a class or a member will show a prototype of the thing
+O  - pressed on a class or a member will try to open file with the tag and take you to the tag (currently it works only for tag files generated with relative paths).
+i  - pressed on a packge or  a class will generate import statment.
+i  - pressed on a function will import (write an empty function) this function.
+     (for last to cases visual selection allowed)
+
+BUGS and LIMITATION:
+    1. currently works only for unix-like systems
+    2.  Rather slow: on a 15Mb tag file (jdk src) it take 8s to open defalul package
+           for ather packages it is a bit faster (no more then 2s)
+    3. opens java files only in case tag file was generated with relative paths.
+ 
+WITHOUT YOUR FEEDBACK IT WON'T BE IMPROVED,
+so let me know if yuo have some thoughts about it.
+
+    
+
